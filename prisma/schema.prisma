@@ -20,6 +20,15 @@ model Post {
   @@map("posts")
 }
 
+model Comment {
+  commentId Int      @id @default(autoincrement())
+  comment   String
+  like      String
+  reply     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
 // enum UserStatus {
 //   ACTIVE
 //   BLOCKED
