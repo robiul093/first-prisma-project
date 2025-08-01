@@ -1,20 +1,20 @@
-import { RequestHandler } from "express";
-import catchAsync from "../../../shared/catchAsync";
-import sendResponse from "../../../shared/sendResponse";
-import status from "http-status";
+// import { RequestHandler } from "express";
+// import catchAsync from "../../../shared/catchAsync";
+// import sendResponse from "../../../shared/sendResponse";
+// import status from "http-status";
 
-const createUser: RequestHandler = catchAsync(async (req, res) => {
+// const createUser: RequestHandler = catchAsync(async (req, res) => {
   // console.log(req.body);
   // const result = await UserService.createUser(req.body);
 
-  sendResponse(res, {
-    statusCode: status.OK,
-    success: true,
-    message: "User Registration Successfuly.",
-    data: "result",
-  });
-});
-const loginUser: RequestHandler = catchAsync(async (req, res) => {
+//   sendResponse(res, {
+//     statusCode: status.OK,
+//     success: true,
+//     message: "User Registration Successfuly.",
+//     data: "result",
+//   });
+// });
+// const loginUser: RequestHandler = catchAsync(async (req, res) => {
   // const result = await UserService.loginUser(req.body);
   // console.log(result);
 
@@ -31,9 +31,9 @@ const loginUser: RequestHandler = catchAsync(async (req, res) => {
   //   message: "User Login Successfuly.",
   //   data: others,
   // });
-});
+// });
 
-export const UserController = {
-  createUser,
-  loginUser,
-};
+// export const UserController = {
+//   createUser,
+//   loginUser,
+// };
